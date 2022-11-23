@@ -1,0 +1,26 @@
+[package]
+name = "rupushdeer"
+version = "0.1.0"
+edition = "2021"
+description = "PushDeer SDK for Rust."
+license = "MIT OR Apache-2.0"
+keywords = ["pushdeer"]
+categories = ["api-bindings"]
+repository = "https://github.com/abgelehnt/rupushdeer"
+documentation = "https://docs.rs/rupushdeer"
+authors = ["Chi <abgelehnt@foxmail.com>"]
+readme = "README.md"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+reqwest = { version = "0.11", features = ["json", "blocking"] }
+serde_json = "1.0"
+log = "0.4"
+
+[dev-dependencies]
+env_logger = "0.9"
+
+[[example]]
+name = "simple"
+path = "examples/simple.rs"
